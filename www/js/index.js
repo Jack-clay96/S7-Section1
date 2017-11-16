@@ -43,8 +43,10 @@ function buttonClicked()
     if(test == true)
         {
             navigator.notification.beep(1);
+            navigator.vibrate(2000);
         }
     else {
-        navigator.notification.beep(2);
+            navigator.notification.beep(2);
+        navigator.vibrate(4000);
     }
 }
