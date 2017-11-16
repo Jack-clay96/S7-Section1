@@ -36,7 +36,14 @@ function random() {
 
 function buttonClicked()
 {
-    
     console.log("buttonClicked");
     $("#myText").text(random); //myText matches with span
+    
+    if(random == true)
+        {
+            navigator.notification.beep(1);
+        }
+    else {
+        navigator.notification.beep(2);
+    }
 }
