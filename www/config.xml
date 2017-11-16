@@ -23,6 +23,7 @@ ID is seen by phone - same name might cause issue-->
 	
 	<access origin="*"/>
    	<plugin name="cordova-plugin-whitelist" version="1" />
-    <plugin name="cordova-plugin-dialogs" spec="~1.3.4" /> 
+    <plugin name="cordova-plugin-dialogs" spec="~1.3.4" />
+    <plugin name="cordova-plugin-vibration"/>
     <!--To use npm just copy name into this. spec/version doesnt need to be here, will just use latest -->
 </widget>

@@ -47,6 +47,6 @@ function buttonClicked()
         }
     else {
             navigator.notification.beep(2);
-        navigator.vibrate(4000);
+            navigator.vibrate(4000);
     }
 }
