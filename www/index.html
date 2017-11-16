@@ -18,21 +18,12 @@
  	<div data-role="header">Header</div>
         
   	<div role="main" class="ui-content">
-    <form method="post" action="demoform.asp"> <!-- change action to load page here -->
-        Name:
+        
+        Input:
   		<input type="text" id="name" value=""  />
-  	    Email:
-        <input type="text" id="email" value=""  />
-        Phone number:
-        <input type="number" id="phoneNumber" value=""  />
-        Date of birth:
-        <input type="date" id="DOB" value=""  />
-        Password:
-        <input type="password" id="password" value=""  /> <br>
         
-        <input type="submit" value="Submit" data-corners="true">
-        
-    </form>
+       <button id="submitButton">Submit</button> <!-- click button to run function from .js -->
+        <span id ="myText"> This text will change to a random true/false</span>
     </div>
     
     <div data-role="footer" data-position="fixed">Footer</div>
