@@ -5,11 +5,11 @@ $(document).on("pagecreate","#pageone",function(){ //Once page is created run co
 
 
 
-//document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener("deviceready", onDeviceReady, false);
+
+//$(document).ready(onDeviceReady); // used for testing on webpage. document.addeventlisten needs to be commented
+
 var test;
-$(document).ready(onDeviceReady); // used for testing on webpage. document.addeventlisten needs to be commented
-
-
 
 //$ is used in jquery. # = ID. $ is looking at the launched in HTML document. 	
 /*function updateDisplay() {
@@ -36,14 +36,17 @@ function random() {
 
 function buttonClicked()
 {
+    test = random();
     console.log("buttonClicked");
-    $("#myText").text(random); //myText matches with span
+    $("#myText").text(test); //myText matches with span
     
-    if(random == true)
+    if(test == true)
         {
-            navigator.notification.beep(1);
+            console.log("true");
+            //navigator.notification.beep(1);
         }
     else {
-        navigator.notification.beep(2);
+       // navigator.notification.beep(2);
+        console.log("false");
     }
 }
