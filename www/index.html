@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Untitled Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+    
+</head>
+
+<body>
+
+<div data-role="page" id="pageone">
+        
+ 	<div data-role="header">Header</div>
+        
+  	<div role="main" class="ui-content">
+    <form method="post" action="demoform.asp"> <!-- change action to load page here -->
+        Name:
+  		<input type="text" id="name" value=""  />
+  	    Email:
+        <input type="text" id="email" value=""  />
+        Phone number:
+        <input type="number" id="phoneNumber" value=""  />
+        Date of birth:
+        <input type="date" id="DOB" value=""  />
+        Password:
+        <input type="password" id="password" value=""  /> <br>
+        
+        <input type="submit" value="Submit" data-corners="true">
+        
+    </form>
+    </div>
+    
+    <div data-role="footer" data-position="fixed">Footer</div>
+	</div>
+
+</body>
+</html>
