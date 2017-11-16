@@ -42,11 +42,9 @@ function buttonClicked()
     
     if(test == true)
         {
-            console.log("true");
-            //navigator.notification.beep(1);
+            navigator.notification.beep(1);
         }
     else {
-       // navigator.notification.beep(2);
-        console.log("false");
+        navigator.notification.beep(2);
     }
 }
